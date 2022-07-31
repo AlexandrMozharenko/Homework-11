@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background: #333333; 
+}
+
+.line {  
+    border-bottom: 7px solid #009eff;     
+}
+
+.container {  
+    display: block;  
+    max-width: 450px;
+    width: 100%;   
+    padding: 0px 20px;    
+}
+.menu {
+    padding: 0;
+    margin: 0;
+    background: #333333;
+    list-style: none;        
+}
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.menu ul {    
+    margin: 0;
+    padding: 0;
+    position: absolute; 
+    left: 0;
+    top: calc(100% + 7px);
+}
+
+.menu ul:after {
+    position: absolute;
+    width: 100%;    
+    bottom: 100%;
+    content: '';  
+    height: -20px; 
+    top: -20px; 
+}
+
+.menu li {    
+    float: left;    
+    padding: 0;
+    margin: 0;    
+    text-align: center;
+    background: #333333;
+    position: relative;    
+}
+
+.menu >li>a {
+    display: block;
+    color: rgb(201, 201, 201);
+    text-decoration: none;   
+    padding: 12px 25px; 
+    transition: .8s;
+}
+
+.mas {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.menu >li>a:hover {
+    background: #009eff;    
+}
+
+.second-level >li,
+.third-level > li{
+   background: #009eff;
+   display: block;   
+}
+
+.second-level a{
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+    color: white;     
+    padding: 12px 10px 12px 12px;
+    background: #009eff;
+    transition: .8s;    
+    text-align: left;
+    border: 1px solid #0084ef;
+}
+
+.second-level a:hover {
+    background: #85cbf7;
+}
+
+.second-level {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 60px;
+    display: none;
+    position: absolute;
+    left: 0;    
+}
+
+.second-level li {
+    float: none;   
+    margin: 0;    
+    text-align: left; 
+    width: 180px;      
+}
+
+.second-level span {
+    padding-left: 80px;
+}
+
+.menu li:hover ul {
+    display: block;
+}
+
+.second-level li ul {
+    left: 180px;
+    top: 0;    
+}
+
+.third-level li {
+    display: none;
+}
+
+.second-level li:hover ul li {
+    display: block;
+}
